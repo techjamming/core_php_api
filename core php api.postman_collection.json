@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "5f08f0e3-8c84-4e57-a5bb-d9d33568b93a",
+		"name": "core php api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24968462"
+	},
+	"item": [
+		{
+			"name": "action=UserList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/core_php_api/api/user.php?action=UserList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"core_php_api",
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "UserList"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "action=Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/core_php_api/api/user.php?action=Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"core_php_api",
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "Register"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "action=Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/core_php_api/api/user.php?action=Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"core_php_api",
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "Login"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
